@@ -1,2 +1,8 @@
-@import './common';
-@import './example';
+@import './utils/module';
+
+@import './base/module';
+
+@import './layouts/module';
+
+@import './components/module'
+
