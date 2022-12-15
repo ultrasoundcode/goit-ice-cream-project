@@ -1,82 +1,96 @@
-<div class="products__item">
-    <p class="products__label">
-        100% natural
-    </p>
-    <h2 class="products_heading">
-        products
-    </h2>
+<div class="products__container">
+    <div class="products__section-name">
+        <p class="products__label">
+            100% natural
+        </p>
+        <h2 class="products_heading">
+            products
+        </h2>
+    </div>
     <ul class="products__list">
-        <li class="products__card .products__card--first">
-            <picture class="products__picture">
-                <source media="(min-width: 320px)"
-                srcset="./images/products/product_pic1-480@1x.jpg 1x, ./images/products/product_pic1-480@2x.jpg 2x"
-                type="image/jpg">
-                <source media="(min-width: 768px)"
-                srcset="./images/products/product_pic1-768@1x.jpg 1x, ./images/products/product_pic1-768@2x.jpg 2x"
-                type="image/jpg">
-                <source media="(min-width: 1200px)"
-                srcset="./images/products/product_pic1-1200@1x.jpg 1x, ./images/products/product_pic1-1200@2x.jpg 2x"
-                type="image/jpg">
-                <source media="(max-width: 767px)"
-                srcset="./images/products/product_pic1-480@1x.jpg 1x, ./images/products/product_pic1-480@2x.jpg 2x"
-                type="image/jpg">
-                <img src="./images/products/product_pic1-480@1x.jpg" alt="ice_cream" class="products__picture">
-            </picture>
-            <h3 class="products__title">ice cream</h3>
-            <p class="products__description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
+        <li class="products__card products__card--first">
+            <div class="products__img">
+                <picture class="products__picture">
+                    <source media="(min-width: 320px)"
+                    srcset="./images/products/product_pic1-480@1x.jpg 1x, ./images/products/product_pic1-480@2x.jpg 2x"
+                    type="image/jpg">
+                    <source media="(min-width: 768px)"
+                    srcset="./images/products/product_pic1-768@1x.jpg 1x, ./images/products/product_pic1-768@2x.jpg 2x"
+                    type="image/jpg">
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/products/product_pic1-1200@1x.jpg 1x, ./images/products/product_pic1-1200@2x.jpg 2x"
+                    type="image/jpg">
+                    <source media="(max-width: 767px)"
+                    srcset="./images/products/product_pic1-480@1x.jpg 1x, ./images/products/product_pic1-480@2x.jpg 2x"
+                    type="image/jpg">
+                    <img src="./images/products/product_pic1-480@1x.jpg" alt="ice_cream" class="products__picture">
+                </picture>
+            </div>
+            <div class="products__info products__background--first">
+                <h3 class="products__title">ice cream</h3>
+                <p class="products__description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
             <button class="products__button">
                 <svg class="products__arrow" width="40" height="16">
                     <use href="./images/icons.svg#icon-products-arrow"></use>
                 </svg>
             </button>
+        </div>
         </li>
-        <li class="products__card .products__card--second">
-            <picture class="products__picture">
-                <source media="(min-width: 320px)"
-                srcset="./images/products/product_pic2-480@1x.jpg 1x, ./images/products/product_pic2-480@2x.jpg 2x"
-                type="image/jpg">
-                <source media="(min-width: 768px)"
-                srcset="./images/products/product_pic2-768@1x.jpg 1x, ./images/products/product_pic2-768@2x.jpg 2x"
-                type="image/jpg">
-                <source media="(min-width: 1200px)"
-                srcset="./images/products/product_pic2-1200@1x.jpg 1x, ./images/products/product_pic2-1200@2x.jpg 2x"
-                type="image/jpg">
-                <source media="(max-width: 767px)"
-                srcset="./images/products/product_pic2-480@1x.jpg 1x, ./images/products/product_pic2-480@2x.jpg 2x"
-                type="image/jpg">
-                <img src="./images/products/product_pic2-480@1x.jpg" alt="ice_coffee" class="products__picture">
-            </picture>
-            <h3 class="products__title">ice coffee</h3>
-            <p class="products__description">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
+        <li class="products__card products__background--second">
+            <div class="products__img">
+                <picture class="products__picture">
+                    <source media="(min-width: 320px)"
+                    srcset="./images/products/product_pic2-480@1x.jpg 1x, ./images/products/product_pic2-480@2x.jpg 2x"
+                    type="image/jpg">
+                    <source media="(min-width: 768px)"
+                    srcset="./images/products/product_pic2-768@1x.jpg 1x, ./images/products/product_pic2-768@2x.jpg 2x"
+                    type="image/jpg">
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/products/product_pic2-1200@1x.jpg 1x, ./images/products/product_pic2-1200@2x.jpg 2x"
+                    type="image/jpg">
+                    <source media="(max-width: 767px)"
+                    srcset="./images/products/product_pic2-480@1x.jpg 1x, ./images/products/product_pic2-480@2x.jpg 2x"
+                    type="image/jpg">
+                    <img src="./images/products/product_pic2-480@1x.jpg" alt="ice_coffee" class="products__picture">
+                </picture>
+            </div>
+            <div class="products__info products__background--third">
+                <h3 class="products__title">ice coffee</h3>
+                <p class="products__description">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
             <button class="products__button">
                 <svg class="products__arrow" width="40" height="16">
                     <use href="./images/icons.svg#icon-products-arrow"></use>
                 </svg>
             </button>
+        </div>
         </li>
-        <li class="products__card .products__card--third">
-            <picture class="products__picture">
-                <source media="(min-width: 320px)"
-                srcset="./images/products/product_pic3-480@1x.jpg 1x, ./images/products/product_pic3-480@2x.jpg 2x"
-                type="image/jpg">
-                <source media="(min-width: 768px)"
-                srcset="./images/products/product_pic3-768@1x.jpg 1x, ./images/products/product_pic3-768@2x.jpg 2x"
-                type="image/jpg">
-                <source media="(min-width: 1200px)"
-                srcset="./images/products/product_pic3-1200@1x.jpg 1x, ./images/products/product_pic3-1200@2x.jpg 2x"
-                type="image/jpg">
-                <source media="(max-width: 767px)"
-                srcset="./images/products/product_pic3-480@1x.jpg 1x, ./images/products/product_pic3-480@2x.jpg 2x"
-                type="image/jpg">
-                <img src="./images/products/product_pic3-480@1x.jpg" alt="milkshakes" class="products__picture">
-            </picture>
-            <h3 class="products__title">milkshakes</h3>
-            <p class="products__description">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</p>
+        <li class="products__card">
+            <div class="products__img">
+                <picture class="products__picture">
+                    <source media="(min-width: 320px)"
+                    srcset="./images/products/product_pic3-480@1x.jpg 1x, ./images/products/product_pic3-480@2x.jpg 2x"
+                    type="image/jpg">
+                    <source media="(min-width: 768px)"
+                    srcset="./images/products/product_pic3-768@1x.jpg 1x, ./images/products/product_pic3-768@2x.jpg 2x"
+                    type="image/jpg">
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/products/product_pic3-1200@1x.jpg 1x, ./images/products/product_pic3-1200@2x.jpg 2x"
+                    type="image/jpg">
+                    <source media="(max-width: 767px)"
+                    srcset="./images/products/product_pic3-480@1x.jpg 1x, ./images/products/product_pic3-480@2x.jpg 2x"
+                    type="image/jpg">
+                    <img src="./images/products/product_pic3-480@1x.jpg" alt="milkshakes" class="products__picture">
+                </picture>
+            </div>
+            <div class="products__info products__background--third">
+                <h3 class="products__title">milkshakes</h3>
+                <p class="products__description">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</p>
             <button class="products__button">
                 <svg class="products__arrow" width="40" height="16">
                     <use href="./images/icons.svg#icon-products-arrow"></use>
                 </svg>
             </button>
+        </div>
         </li>
     </ul>
 </div>
