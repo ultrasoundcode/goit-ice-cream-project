@@ -1,0 +1,43 @@
+<div class="gallery">
+  <div class="gallery__overlay">
+    <div class="container">
+      <div class="swiper mySwiper gallery__swiper">
+        <div class="swiper-wrapper gallery__wrapper">
+          <div class="swiper-slide gallery__slide">
+            <picture class="gallery__img">
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/gallery/ice1-1200@1x.jpg 1x,
+                  ./images/gallery/ice1-1200@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/gallery/ice1-768@1x.jpg 1x,
+                  ./images/gallery/ice1-768@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 480px)"
+                srcset="
+                  ./images/gallery/ice1-480@1x.jpg 1x,
+                  ./images/gallery/ice1-480@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide gallery__slide">
+            <img src="./images/gallery/ice1-480@1x.jpg" alt="ice cream" />
+          </div>
+          <div class="swiper-slide glealry__slide"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

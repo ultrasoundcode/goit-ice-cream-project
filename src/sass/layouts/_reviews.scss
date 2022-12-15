@@ -1,0 +1,49 @@
+.reviews {
+  font-family: 'Montserrat';
+}
+.review {
+}
+
+.review__wrapper {
+}
+
+.review__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review__img {
+  margin-bottom: 32px;
+
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+.review__text {
+  margin-bottom: 32px;
+  padding: 35px 40px;
+
+  background-color: var(--background-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 255%;
+
+  color: var(--primary-text-color);
+
+  border-radius: 10px;
+}
+.review__author {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+
+  color: var(--secondary-text-color);
+}
+
+.review__pagination {
+  position: unset;
+  margin-bottom: 40px;
+}
