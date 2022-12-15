@@ -1,9 +1,45 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
-  
+  background-image: url(../images/body/bg-icecreem-480@1x.jpg);
+background-size: 885px 1242px;
+    background-position: center;
+  @media /* only for retina displays */
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+  background-image: url(../images/body/bg-icecreem-480@2x.jpg);
+}
+@media screen and (min-width: 768px){
+  background-image: url(../images/body/bg-icecreem-768@1x.jpg);
+  background-size: 963px 1017px;
+  @media /* only for retina displays */
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    background-image: url(../images/body/bg-icecreem-768@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px){
+  background-image: url(../images/body/bg-icecreem-1200@1x.jpg);
+  background-size: 1300px 1350px;
+  @media /* only for retina displays */
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    background-image: url(../images/body/bg-icecreem-1200@2x.jpg);
+  }
+}
 }
 .container {
   padding: 0 20px;
