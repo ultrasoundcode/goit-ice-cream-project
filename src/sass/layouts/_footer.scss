@@ -1,5 +1,5 @@
 .footer {
-  background-color: #84A178;
+  background-color: var(--background-color);
 }
 .footer-slogan__one {
   font-family: 'Montserrat';
@@ -9,7 +9,7 @@
   line-height: 22px;
   text-transform: uppercase;
   max-width: 232px;
-  color: #FCFCFC;
+  color: var(--primary-text-color);
 }
 .footer-slogan__two {
   font-family: 'Montserrat';
@@ -22,7 +22,7 @@
   max-width: 200px;
   margin-top: 16px;
   margin-bottom: 60px;
-  color: #FCFCFC;
+  color: var(--primary-text-color);
 }
 .footer-contact {
   font-family: 'Montserrat';
@@ -31,7 +31,7 @@
   font-size: 12px;
   line-height: 186%;
   text-align: right;
-  color: #131313;
+  color: var(--secondary-text-color);
   margin-bottom: 40px;
 }
 .footer-contact__tel {
@@ -41,10 +41,10 @@
   font-size: 12px;
   line-height: 186%;
   text-align: right;
-  color: #FCFCFC;
+  color: var(--primary-text-color);
 }
 .footer-copyright {
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid var(--border-solid-color);
   
 }
 .footer-copyright__text {
@@ -54,7 +54,7 @@
   font-size: 14px;
   line-height: 152%;
   text-align: center;
-  color: #7a7a7a;
+  color: var(--footer-text-color);
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -64,7 +64,7 @@
   margin-bottom: 20px;
 }
 .socials-icon {
-  background-color: #F8D24E;
+  background-color: var(--accent-color);
   border-radius: 50%;
   width: 34px;
   height: 34px;
@@ -73,19 +73,11 @@
   align-items: center;
   margin-left: 20px;
   &:hover .socials-icon__link, &:focus .socials-icon__link {
-    fill: #FCFCFC;
-  }
-  &:hover {
-    width: 32px;
-    height: 32px;
-  }
-  &:focus {
-    width: 38px;
-    height: 38px;
+    fill: var(--primary-text-color);
   }
 }
 .socials-icon__link {
-  fill: #84a178;
+  fill: var(--background-color);
 }
 
 @media screen and (min-device-width: 768px), screen and (min-width: 768px){
@@ -106,11 +98,11 @@
   .footer-contact {
     font-size: 14px;
     margin-bottom: 40px;
-    color: #131313;
+    color: var(--secondary-text-color);
   }
   .footer-contact__tel {
     font-size: 14px;
-    color: #FCFCFC;
+    color: var(--primary-text-color);
   }
   .footer-row {
     display: flex;
@@ -152,11 +144,11 @@
   .footer-contact {
     font-size: 14px;
     margin-bottom: 60px;
-    color: #131313;
+    color: var(--secondary-text-color);
   }
   .footer-contact__tel {
     font-size: 16px;
-    color: #FCFCFC;
+    color: var(--primary-text-color);
   }
   .footer-row {
     display: flex;
