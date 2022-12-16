@@ -11,20 +11,17 @@
 }
 @media screen and (min-width: 320px) {
     .products__container {
-        background-image: url(../images/body/bg-icecreem-480@1x.jpg);
         max-width: 767px;
     }
 }
 @media screen and (min-width: 768px) {
     .products__container {
-        background-image: url(../images/body/bg-icecreem-768@1x.jpg);
         min-width: 768px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .products__container {
-        background-image: url(../images/body/bg-icecreem-1200@1x.jpg);
         min-width: 1200px;
     }
 }
