@@ -99,6 +99,19 @@
     }
 }
 
+.products__picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+@media screen and (min-width: 1200px) {
+    .products__picture {
+        width: 302px;
+        height: 302px;
+        border-radius: 50%;
+    }
+}
+
 .products__list {
     display: flex;
     margin: 0 auto;
