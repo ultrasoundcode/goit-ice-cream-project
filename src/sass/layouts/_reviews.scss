@@ -2,6 +2,13 @@
   font-family: 'Montserrat';
 }
 .review {
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 100px;
+  }
 }
 
 .review__wrapper {
@@ -69,5 +76,4 @@
 
 .review__pagination {
   position: unset;
-  margin-bottom: 40px;
 }
