@@ -1,211 +1,205 @@
 .contacts {
-    background: var(--background-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  background: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .contacts__list {
-
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 16px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
 }
 
-// .contacts__item { 
+// .contacts__item {
 
 // }
 
 .contacts-card {
-    padding: 40px 0px 24px 32px;
+  padding: 40px 0px 24px 32px;
 
-    width: 280px;
-    height: 412px;
-    border-radius: 24px;
-    background: var(--primary-text-color);
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
+  width: 280px;
+  height: 412px;
+  border-radius: 24px;
+  background: var(--primary-text-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
 }
 
 .contacts-card__category {
-    width: 80px;
-    height: 22px;
-    padding: 4px 22px 4px;
+  width: 80px;
+  height: 22px;
+  padding: 4px 22px 4px;
 
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
 
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(14 / 12);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
 
-
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-
-    color: var(--secondary-text-color);
-    background: var(--accent-color);
-
+  color: var(--secondary-text-color);
+  background: var(--accent-color);
 }
 
 .contacts-card__category:nth-child(2) {
-    width: 130px;
+  width: 130px;
 }
 
 .contacts-card__city {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
 
-    margin-top: 20px;
-    margin-bottom: 8px;
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12);
+  align-items: left;
+  letter-spacing: 0.04em;
 
-
-    align-items: left;
-    letter-spacing: 0.04em;
-
-    color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
-
-
 
 .contacts-card__address {
-    padding-right: auto;
-    font-family: 'Montserrat';
-    font-style: inherit;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12);
-    
+  width: 190px;
+  height: 40px;
+  padding-bottom: 24px;
+  font-family: 'Montserrat';
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
 
-    letter-spacing: 0.04em;
+  letter-spacing: 0.04em;
 
-    color: var(--products-color-third);
-}
-
-.contacts-card__address-first {
-    text-align: start;
-    padding-left: 20px;
+  color: var(--products-color-third);
 }
 
 .contacts-card__container {
-    padding: 0px 0px 24px;
-    width: 216px;
-    border-bottom: 1px solid var(--border-solid-color);
+  padding-bottom: 24px;
+  width: 216px;
+  border-bottom: 1px solid var(--border-solid-color);
 }
 .contacts-card__working {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-bottom: 24px;
-    width: 216px;
-    border-bottom: 1px solid var(--border-solid-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  width: 216px;
+  border-bottom: 1px solid var(--border-solid-color);
 }
 .contacts-card__working-days {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12);
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
 
-
-    color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
 .contacts-card__working-hours {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
 
-
-    color: #ABABAB;
-
-    &:not(:last-child) {
-        margin-bottom: 12px;
+  color: #ababab;
 }
+
+.contacts-card__working-hours:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .contacts-card__phone {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(19 / 12);
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
 
-    color: var(--secondary-text-color);
-    margin-bottom: 6px;
+  color: var(--secondary-text-color);
 }
 .contacts-card__mail {
-    display: block;
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(19 / 12);
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
 
-    color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
 .contacts__button {
-    display: block;
-    margin: 20px auto 16px;
-    width: 196px;
-    height: 42px;
-    background-color: var(--background-color);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--accent-color);
-    border-radius: 10px;
+  display: block;
+  margin: 20px auto 16px;
+  width: 196px;
+  height: 42px;
+  background-color: var(--background-color);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-        color: var(--secondary-text-color);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+  }
 }
 .contacts__franchise-button {
-    display: block;
-    margin: 0 auto;
-    width: 196px;
-    height: 42px;
-    background-color: var(--background-color);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--accent-color);
-    border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  min-width: 196px;
+  height: 42px;
+  background-color: var(--background-color);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  background-color: transparent;
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
 
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-        color: var(--secondary-text-color);
-    }
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border: 2px solid var(--button-hover-color);
+  }
+  &:focus {
+    border: 2px solid var(--button-hover-color);
+    color: var(--white-color);
+  }
+  &:disabled {
+    border: 2px solid var(--button-disabled-color);
+    color: var(--black-color);
+  }
 }
 
-
-@media screen and (min-device-width: 768px) and (max-device-width:1199px) {
-.contacts {
+@media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+  .contacts {
     background: var(--background-color);
     padding-top: 80px;
     padding-bottom: 40px;
-}
-.contacts__list {
+  }
+  .contacts__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
-}
-.contacts-card {
+  }
+  .contacts-card {
     padding: 40px 0px 40px 24px;
     width: 224px;
     height: 537px;
@@ -213,78 +207,74 @@
     background: var(--primary-text-color);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-}
+  }
 
-
-.contacts-card__category {
+  .contacts-card__category {
     width: 73px;
     height: 30px;
-    
+
     &:nth-child(2) {
-        width: 138px;
+      width: 138px;
     }
-}
-.contacts-card__container {
+  }
+  .contacts-card__container {
     padding-bottom: 32px;
     width: 176px;
-}
-.contacts-card__city {
+  }
+  .contacts-card__city {
     margin-top: 32px;
     margin-bottom: 12px;
     font-size: 14px;
     line-height: calc(26 / 14);
-}
+  }
 
-.contacts-card__address {
+  .contacts-card__address {
     font-size: 14px;
     line-height: calc(26 / 14);
-}
+  }
 
-
-.contacts-card__working {
+  .contacts-card__working {
     padding-top: 32px;
     padding-bottom: 32px;
     margin-bottom: 32px;
     width: 176px;
-}
+  }
 
-.contacts-card__working-days {
+  .contacts-card__working-days {
     font-size: 14px;
     line-height: calc(26 / 14);
-}
+  }
 
-.contacts-card__working-hours {
+  .contacts-card__working-hours {
     font-size: 14px;
     line-height: calc(26 / 14);
 
     &:not(:last-child) {
-        margin-bottom: 8px;
-}
-}
-.contacts-card__phone {
+      margin-bottom: 8px;
+    }
+  }
+  .contacts-card__phone {
     font-size: 14px;
     line-height: calc(21 / 14);
-}
-.contacts-card__mail {
+  }
+  .contacts-card__mail {
     font-size: 14px;
     line-height: calc(21 / 14);
-}
+  }
 
-.contacts__button {
+  .contacts__button {
     display: inline-block;
     margin-left: 180px;
     margin-top: 40px;
     margin-right: auto;
     margin-bottom: 0px;
+  }
 
-}
-
-.contacts__franchise-button {
+  .contacts__franchise-button {
     display: inline-block;
     margin-right: auto;
     margin-left: 16px;
-}
-
+  }
 }
 // .contacts__item {
 // }

@@ -1,0 +1,100 @@
+.hero {
+  background-color: #84a178;
+}
+
+.hero-container {
+  display: flex;
+  width: 1200px;
+  background-image: url(/src/images/hero/bg-hero-1200@1x.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.hero-left-block {
+  width: 50%;
+}
+
+.hero__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: calc(48 / 38);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  width: 367px;
+
+  color: #fcfcfc;
+}
+
+.hero_logo-button {
+  padding: 12px 34px;
+  border: solid 2px #f8d24e;
+  border-radius: 10px;
+
+  background-color: transparent;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: #131313;
+
+  &:hover,
+  &:focus {
+    border: solid 2px transparent;
+  }
+}
+
+.hero__content-list {
+  display: flex;
+}
+
+.hero__content-list_text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #fcfcfc;
+}
+
+.hero__content-list_text-icon {
+  fill: #fcfcfc;
+}
+
+.hero-right-block {
+  display: flex;
+  width: 50%;
+}
+
+.hero-right-block__list {
+  display: flex;
+}
+
+.venue__list-item_qty {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: calc (56/46);
+
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #131313;
+}
+
+.venue__list-item_text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: right;
+
+  color: #fcfcfc;
+}

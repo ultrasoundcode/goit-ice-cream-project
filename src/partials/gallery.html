@@ -4,7 +4,7 @@
       <div class="swiper mySwiper gallery__swiper">
         <div class="swiper-wrapper gallery__wrapper">
           <div class="swiper-slide gallery__slide">
-            <picture class="gallery__img">
+            <picture ">
               <source
                 media="(min-width: 1200px)"
                 srcset="
@@ -23,19 +23,32 @@
                 type="image/jpg"
               />
               <source
-                media="(min-width: 480px)"
+                media="(min-width: 320px)"
                 srcset="
                   ./images/gallery/ice1-480@1x.jpg 1x,
                   ./images/gallery/ice1-480@2x.jpg 2x
                 "
                 type="image/jpg"
               />
+              <img class="gallery__img" src="./images/gallery/ice1-1200@1x.jpg" alt="Ice cream" />
             </picture>
           </div>
           <div class="swiper-slide gallery__slide">
-            <img src="./images/gallery/ice1-480@1x.jpg" alt="ice cream" />
+            <img
+              class="gallery__img"
+              src="./images/gallery/ice2-1200@1x.jpg"
+              alt="ice cream"
+              loading="lazy"
+            />
           </div>
-          <div class="swiper-slide glealry__slide"></div>
+          <div class="swiper-slide gallery__slide">
+            <img
+              class="gallery__img"
+              src="./images/gallery/ice3-1200@1x.jpg"
+              alt="ice cream"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </div>

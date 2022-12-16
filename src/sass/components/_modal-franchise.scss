@@ -1,0 +1,122 @@
+.modal__text-franchise {
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.contacts-form {
+  width: 224px;
+  height: 332px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts-form__input {
+  margin-top: 12px;
+}
+
+.contacts-form__data {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: var(--secondary-text-color);
+
+  padding-left: 12px;
+  width: 224px;
+  height: 32px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+}
+
+.contacts-form__comment {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: var(--secondary-text-color);
+
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 39px;
+  width: 224px;
+  height: 64px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+}
+
+.button-buy-now {
+  margin-top: 24px;
+  margin-bottom: 28px;
+  display: inline-block;
+  min-width: 114px;
+  height: 42px;
+  background: var(--accent-color);
+  border-radius: 10px;
+  border: none;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(17 / 12);
+
+  &:hover {
+    background: var(--button-hover-color);
+  }
+
+  &:focus {
+    background: var(--button-hover-color);
+    color: var(--white-color);
+  }
+
+  &:disabled {
+    background: var(--button-disabled-color);
+    color: var(--black-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal__text-franchise {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+
+  .contacts-form {
+    width: 368px;
+    height: 332px;
+  }
+
+  .contacts-form__input {
+    margin-top: 16px;
+  }
+
+  .contacts-form__data {
+    font-size: 14px;
+
+    padding-left: 16px;
+    width: 368px;
+    height: 42px;
+  }
+
+  .contacts-form__comment {
+    font-size: 14px;
+
+    padding-left: 16px;
+    padding-top: 11px;
+    padding-bottom: 53px;
+    width: 368px;
+    height: 84px;
+  }
+
+  .button-buy-now {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    min-width: 152px;
+
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
