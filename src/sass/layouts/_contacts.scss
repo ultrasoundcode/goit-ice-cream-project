@@ -93,17 +93,17 @@
 }
 
 .contacts-card__address-third {
-    width: 190px;
-    height: 40px;
-    font-family: 'Montserrat';
-    font-style: inherit;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12);
-  
-    letter-spacing: 0.04em;
-  
-    color: var(--products-color-third);
+  width: 190px;
+  height: 40px;
+  font-family: 'Montserrat';
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+
+  letter-spacing: 0.04em;
+
+  color: var(--products-color-third);
 }
 
 // .contacts-card__container {
@@ -120,6 +120,7 @@
   border-top: 1px solid var(--border-solid-color);
   border-bottom: 1px solid var(--border-solid-color);
 }
+
 .contacts-card__working-days {
   font-family: 'Montserrat';
   font-weight: 500;
@@ -128,6 +129,7 @@
 
   color: var(--secondary-text-color);
 }
+
 .contacts-card__working-hours {
   display: flex;
   flex-direction: column;
@@ -160,6 +162,7 @@
 
   color: var(--secondary-text-color);
 }
+
 .contacts-card__mail {
   font-family: 'Montserrat';
   font-weight: 500;
@@ -168,6 +171,7 @@
 
   color: var(--secondary-text-color);
 }
+
 .contacts__button {
   display: block;
   margin: 20px auto 16px;
@@ -196,10 +200,11 @@
     color: var(--secondary-text-color);
   }
 }
+
 .contacts__franchise-button {
   display: block;
   margin: 0 auto;
-  min-width: 196px;
+  width: 196px;
   height: 42px;
   background-color: var(--background-color);
   text-align: center;
@@ -218,31 +223,33 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    border: 2px solid var(--button-hover-color);
-  }
+  &:hover,
   &:focus {
-    border: 2px solid var(--button-hover-color);
-    color: var(--white-color);
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
   }
+
   &:disabled {
     border: 2px solid var(--button-disabled-color);
     color: var(--black-color);
   }
 }
 
+// screen 768px
+
 @media screen and (min-width: 768px) {
   .contacts {
-    background: var(--background-color);
     padding-top: 80px;
     padding-bottom: 40px;
   }
+
   .contacts__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .contacts-card {
     padding: 40px 0px 40px 24px;
     width: 224px;
@@ -250,6 +257,7 @@
     border-radius: 24px;
     background: var(--primary-text-color);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
   }
 
   .contacts-card__category {
@@ -260,7 +268,7 @@
       width: 138px;
     }
   }
- 
+
   .contacts-card__city {
     margin-top: 32px;
     margin-bottom: 12px;
@@ -310,10 +318,12 @@
       margin-bottom: 8px;
     }
   }
+
   .contacts-card__phone {
     font-size: 14px;
     line-height: calc(21 / 14);
   }
+
   .contacts-card__mail {
     font-size: 14px;
     line-height: calc(21 / 14);
@@ -321,27 +331,32 @@
 
   .button-container {
     max-width: 408px;
+    max-height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-top: 24px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .contacts__franchise-button {
+    margin-top: 4px;
+  }
 }
+
+// screen 1200px
 
 @media screen and (min-width:1200px) {
   .contacts {
     padding-top: 100px;
     padding-bottom: 120px;
   }
-  
+
   .contacts__list {
     gap: 32px;
   }
-
-  // .contacts__item {}
 
   .contacts-card {
     padding: 40px 0px 40px 40px;
@@ -351,11 +366,10 @@
 
   .contacts-card__category {
     width: 76px;
-    height: 30px; 
-    
+
     &:nth-child(2) {
       width: 148px;
-      }
+    }
   }
 
   .contacts-card__city {
@@ -376,8 +390,8 @@
     height: 50px;
     font-size: 16px;
     line-height: calc(29 / 16);
-  } 
-    
+  }
+
   .contacts-card__address-third {
     width: 261px;
     height: 50px;
@@ -397,6 +411,7 @@
   .contacts-card__working-hours {
     font-size: 16px;
     line-height: calc(30 / 16);
+
     &:not(:last-child) {
       margin-bottom: 12px;
     }
@@ -405,8 +420,6 @@
   .contacts-card__contacts-container:not(:last-child) {
     margin-bottom: 4px;
   }
-
-  
 
   .contacts-card__phone {
     font-size: 16px;
@@ -419,34 +432,6 @@
   }
 
   .button-container {
-    margin-top: 44px;
+    margin-top: 60px;
   }
-
 }
-
-
-  // .contacts__button {
-  //   display: inline-block;
-  //   margin-left: 180px;
-  //   margin-top: 40px;
-  //   margin-right: auto;
-  //   margin-bottom: 0px;
-  // }
-
-  // .contacts__franchise-button {
-  //   display: inline-block;
-  //   margin-right: auto;
-  //   margin-left: 16px;
-  // }
-
-// .contacts__item {
-// }
-
-// .contacts-card__phone {
-// }
-// .contacts-card__mail {
-// }
-// .contacts__button {
-// }
-// .contacts__franchise-button {
-// }
