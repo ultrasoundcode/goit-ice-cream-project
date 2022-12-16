@@ -42,14 +42,21 @@
     display: flex;
   }
 }
-.mobile-menu__burger-icon {
-  fill: var(--white-color);
+
+@media screen and (min-width: 768px) {
+  .page-header__buttons {
+    display: flex;
+    gap: 32px;
+  }
 }
 .mobile-menu__open-btn {
   background-color: transparent;
   padding: 0;
   border: none;
   line-height: 0;
+}
+.mobile-menu__burger-icon {
+  fill: var(--white-color);
 }
 @media screen and (min-width: 1200px) {
   .mobile-menu__open-btn {
