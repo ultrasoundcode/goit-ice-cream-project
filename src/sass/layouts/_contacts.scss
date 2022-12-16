@@ -231,7 +231,7 @@
   }
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+@media screen and (min-width: 768px) {
   .contacts {
     background: var(--background-color);
     padding-top: 80px;
@@ -250,7 +250,6 @@
     border-radius: 24px;
     background: var(--primary-text-color);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
   }
 
   .contacts-card__category {
@@ -330,6 +329,99 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+@media screen and (min-width:1200px) {
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  
+  .contacts__list {
+    gap: 32px;
+  }
+
+  // .contacts__item {}
+
+  .contacts-card {
+    padding: 40px 0px 40px 40px;
+    width: 368px;
+    height: 542px;
+  }
+
+  .contacts-card__category {
+    width: 76px;
+    height: 30px; 
+    
+    &:nth-child(2) {
+      width: 148px;
+      }
+  }
+
+  .contacts-card__city {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+
+  .contacts-card__address-first {
+    width: 262px;
+    height: 50px;
+    font-size: 16px;
+    line-height: calc(29 / 16);
+  }
+
+  .contacts-card__address-second {
+    width: 288px;
+    height: 50px;
+    font-size: 16px;
+    line-height: calc(29 / 16);
+  } 
+    
+  .contacts-card__address-third {
+    width: 261px;
+    height: 50px;
+    font-size: 16px;
+    line-height: calc(29 / 16);
+  }
+
+  .contacts-card__working {
+    width: 288px;
+  }
+
+  .contacts-card__working-days {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+
+  .contacts-card__working-hours {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  .contacts-card__contacts-container:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  
+
+  .contacts-card__phone {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+
+  .contacts-card__mail {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+
+  .button-container {
+    margin-top: 44px;
+  }
+
 }
 
 
