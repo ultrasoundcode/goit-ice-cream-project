@@ -20,7 +20,7 @@
   line-height: calc(22 / 18);
   text-align: center;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: var(--primary-text-color);
 
   margin-bottom: 12px;
   @media screen and (min-device-width: 768px) {
@@ -48,7 +48,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #fcfcfc;
+  color: var(--primary-text-color);
 
   margin-bottom: 32px;
   margin-left: auto;
@@ -172,9 +172,10 @@
   text-align: center;
   letter-spacing: 0.04em;
 
-  color: #fcfcfc;
+  color: var(--primary-text-color);
   @media screen and (min-device-width: 768px) {
     text-align: left;
+    font-size: 14px;
   }
 
   @media screen and (min-device-width: 1200px) {
@@ -190,7 +191,7 @@
   text-align: center;
   letter-spacing: 0.04em;
 
-  color: #fcfcfc;
+  color: var(--primary-text-color);
   @media screen and (min-device-width: 768px) {
     line-height: 176%;
     text-align: left;
@@ -210,7 +211,7 @@
   line-height: 194%;
   /* or 23px */
   letter-spacing: 0.04em;
-  color: #fcfcfc;
+  color: var(--primary-text-color);
 
   @media screen and (min-device-width: 768px) {
     display: block;
@@ -235,24 +236,24 @@
   font-size: 14px;
   line-height: calc(18 / 14);
   text-align: center;
-  color: #000000;
+  color: var(--black-color);
   margin: 10px auto 50px auto;
-  background: #f8d24e;
+  background: var(--accent-color);
   border-radius: 10px;
   border-color: transparent;
 
   &:hover {
-    background: #0a8817;
+    background: var(--button-hover-color);
   }
   &:focus {
-    background: #0a8817;
-    color: #fcfcfc;
+    background: var(--button-hover-color);
+    color: var(--primary-text-color);
 
     &:focus .about__icon-btn {
-      fill: #fcfcfc;
+      fill: var(--primary-text-color);
     }
     &:disabled {
-      background: #ababab;
+      background: var(--button-disabled-color);
     }
   }
 
@@ -284,7 +285,7 @@
 .about__icon-box {
   width: 50px;
   height: 50px;
-  background-color: #f8d24e;
+  background-color: var(--accent-color);
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -312,7 +313,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #fcfcfc;
+  color: var(--primary-text-color);
   margin-bottom: 16px;
   @media screen and (min-device-width: 768px) {
     font-size: 48px;
@@ -334,7 +335,7 @@
 
   text-align: center;
 
-  color: #fcfcfc;
+  color: var(--primary-text-color);
   @media screen and (min-device-width: 768px) {
     font-weight: 400;
     font-size: 14px;
