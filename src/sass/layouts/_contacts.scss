@@ -64,10 +64,9 @@
   color: var(--secondary-text-color);
 }
 
-.contacts-card__address {
+.contacts-card__address-first {
   width: 190px;
   height: 40px;
-  padding-bottom: 24px;
   font-family: 'Montserrat';
   font-style: inherit;
   font-weight: 500;
@@ -79,16 +78,46 @@
   color: var(--products-color-third);
 }
 
-.contacts-card__container {
-  padding-bottom: 24px;
-  width: 216px;
-  border-bottom: 1px solid var(--border-solid-color);
+.contacts-card__address-second {
+  width: 212px;
+  height: 40px;
+  font-family: 'Montserrat';
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+
+  letter-spacing: 0.04em;
+
+  color: var(--products-color-third);
 }
+
+.contacts-card__address-third {
+    width: 190px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-style: inherit;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+  
+    letter-spacing: 0.04em;
+  
+    color: var(--products-color-third);
+}
+
+// .contacts-card__container {
+//   padding-bottom: 24px;
+//   width: 216px;
+//   border-bottom: 1px solid var(--border-solid-color);
+// }
 .contacts-card__working {
+  margin-top: 24px;
   padding-top: 24px;
   padding-bottom: 24px;
   margin-bottom: 24px;
   width: 216px;
+  border-top: 1px solid var(--border-solid-color);
   border-bottom: 1px solid var(--border-solid-color);
 }
 .contacts-card__working-days {
@@ -114,19 +143,28 @@
   margin-bottom: 12px;
 }
 
+.contacts-card__contacts-container {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+
 .contacts-card__phone {
   font-family: 'Montserrat';
   font-weight: 500;
-  font-size: 16px;
-  line-height: calc(24 / 16);
+  font-size: 12px;
+  line-height: calc(19 / 12);
 
   color: var(--secondary-text-color);
 }
 .contacts-card__mail {
   font-family: 'Montserrat';
   font-weight: 500;
-  font-size: 16px;
-  line-height: calc(24 / 16);
+  font-size: 12px;
+  line-height: calc(19 / 12);
 
   color: var(--secondary-text-color);
 }
@@ -141,6 +179,12 @@
   justify-content: center;
   border: 2px solid var(--accent-color);
   border-radius: 10px;
+  background-color: transparent;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
 
   transition-property: background-color;
   transition-duration: 250ms;
@@ -217,10 +261,7 @@
       width: 138px;
     }
   }
-  .contacts-card__container {
-    padding-bottom: 32px;
-    width: 176px;
-  }
+ 
   .contacts-card__city {
     margin-top: 32px;
     margin-bottom: 12px;
@@ -228,7 +269,23 @@
     line-height: calc(26 / 14);
   }
 
-  .contacts-card__address {
+  .contacts-card__address-first {
+    width: 173px;
+    height: 71px;
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  .contacts-card__address-second {
+    width: 158px;
+    height: 71px;
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  .contacts-card__address-third {
+    width: 159px;
+    height: 71px;
     font-size: 14px;
     line-height: calc(26 / 14);
   }
@@ -237,6 +294,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     margin-bottom: 32px;
+    margin-top: 32px;
     width: 176px;
   }
 
@@ -262,20 +320,33 @@
     line-height: calc(21 / 14);
   }
 
-  .contacts__button {
-    display: inline-block;
-    margin-left: 180px;
-    margin-top: 40px;
+  .button-container {
+    max-width: 408px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+    margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0px;
-  }
-
-  .contacts__franchise-button {
-    display: inline-block;
-    margin-right: auto;
-    margin-left: 16px;
   }
 }
+
+
+  // .contacts__button {
+  //   display: inline-block;
+  //   margin-left: 180px;
+  //   margin-top: 40px;
+  //   margin-right: auto;
+  //   margin-bottom: 0px;
+  // }
+
+  // .contacts__franchise-button {
+  //   display: inline-block;
+  //   margin-right: auto;
+  //   margin-left: 16px;
+  // }
+
 // .contacts__item {
 // }
 
