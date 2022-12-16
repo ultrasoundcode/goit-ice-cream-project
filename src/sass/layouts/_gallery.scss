@@ -31,10 +31,17 @@
 
 .gallery__wrapper {
 }
-
 .gallery__slide {
 }
+
 .gallery__img {
-  width: 230px;
-  height: 130px;
+  width: 100%;
+
+  object-fit: cover;
+  @media screen and (max-width: 767px) {
+    height: 130px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 327px;
+  }
 }
