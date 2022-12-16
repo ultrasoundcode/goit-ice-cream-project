@@ -53,12 +53,18 @@
   }
 }
 .review__author {
+  margin-bottom: 12px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 186%;
 
   color: var(--secondary-text-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .review__pagination {
