@@ -199,7 +199,7 @@
 .contacts__franchise-button {
   display: block;
   margin: 0 auto;
-  min-width: 196px;
+  width: 196px;
   height: 42px;
   background-color: var(--background-color);
   text-align: center;
@@ -218,12 +218,10 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    border: 2px solid var(--button-hover-color);
-  }
+  &:hover,
   &:focus {
-    border: 2px solid var(--button-hover-color);
-    color: var(--white-color);
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
   }
   &:disabled {
     border: 2px solid var(--button-disabled-color);
@@ -231,7 +229,9 @@
   }
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+// screen 768px
+
+@media screen and (min-width: 768px) {
   .contacts {
     background: var(--background-color);
     padding-top: 80px;
@@ -322,39 +322,100 @@
 
   .button-container {
     max-width: 408px;
+    max-height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-top: 24px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
   }
+
+    .contacts__franchise-button {
+    margin-top: 4px;
+    }
 }
 
+// screen 1200px
 
-  // .contacts__button {
-  //   display: inline-block;
-  //   margin-left: 180px;
-  //   margin-top: 40px;
-  //   margin-right: auto;
-  //   margin-bottom: 0px;
-  // }
+@media screen and (min-width:1200px) {
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
 
-  // .contacts__franchise-button {
-  //   display: inline-block;
-  //   margin-right: auto;
-  //   margin-left: 16px;
-  // }
+  .contacts__list{
+    gap: 32px;
+  }
+  .contacts-card {
+    padding: 40px 0px 40px 40px;
+    width: 368px;
+    height: 542px;
+  }
+.contacts-card__category {
+  width: 76px;
 
-// .contacts__item {
-// }
+  &:nth-child(2) {
+    width: 148px;
+  }
+}
 
-// .contacts-card__phone {
-// }
-// .contacts-card__mail {
-// }
-// .contacts__button {
-// }
-// .contacts__franchise-button {
-// }
+.contacts-card__city {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+.contacts-card__address-first {
+  width: 262px;
+  height: 50px;
+  font-size: 16px;
+  line-height: calc(29 / 16);
+}
+
+.contacts-card__address-second {
+  width: 288px;
+  height: 50px;
+  font-size: 16px;
+  line-height: calc(29 / 16);
+}
+
+.contacts-card__address-third {
+  width: 261px;
+  height: 50px;
+  font-size: 16px;
+  line-height: calc(29 / 16);
+}
+.contacts-card__working {
+  width: 288px;
+}
+.contacts-card__working-days {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+
+.contacts-card__working-hours {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.contacts-card__contacts-container:not(:last-child) {
+    margin-bottom: 4px;
+  }
+.contacts-card__phone {
+  font-size: 16px;
+  line-height: calc(24 / 16);
+}
+
+.contacts-card__mail {
+  font-size: 16px;
+  line-height: calc(24 / 16);
+}
+.button-container {
+  margin-top: 60px;
+}
+}
