@@ -218,13 +218,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    border: 2px solid var(--button-hover-color);
-  }
-  &:focus {
-    border: 2px solid var(--button-hover-color);
-    color: var(--white-color);
-  }
+  &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: var(--black-color);
+    }
   &:disabled {
     border: 2px solid var(--button-disabled-color);
     color: var(--black-color);
