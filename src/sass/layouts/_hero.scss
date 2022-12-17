@@ -13,17 +13,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .hero-container {
-    display: flex;
-    width: 100%;
-    background-image: url(/src/images/hero/bg-hero-768@1x.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .hero-container {
     display: flex;
@@ -35,11 +24,14 @@
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  (min-resolution: 192dpi) and (min-width: 1200px),
-  (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero-container {
-    background-image: url(/src/images/hero/bg-hero-1200@2x.png);
+    display: flex;
+    width: 100%;
+    background-image: url(/src/images/hero/bg-hero-768@1x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 }
 
@@ -50,6 +42,15 @@
     background-image: url(/src/images/hero/bg-hero-768@2x.png);
   }
 }
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero-container {
+    background-image: url(/src/images/hero/bg-hero-1200@2x.png);
+  }
+}
+
 // =========================== left block of hero =======================================
 
 @media screen and (min-width: 768px) {
