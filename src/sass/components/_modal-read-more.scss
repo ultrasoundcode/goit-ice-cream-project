@@ -41,14 +41,19 @@
   border-radius: 10px;
   background-color: var(--primary-text-color);
   transition: 0.3s all;
+  height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal__title {
   
   font-family: 'Seymour One';
   font-weight: 400;
-  font-size: 16px;
-  line-height: calc(24 / 16);
+  font-size: 20px;
+  line-height: 28px;
   color: var(--secondary-text-color);
 }
 
@@ -92,17 +97,17 @@
   }
 }
 
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+// /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
 
-a.js-open-modal {
-  padding: 20px;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #414b52;
-  margin: 10px;
-  color: #fff;
-  border-radius: 3px;
-}
+// a.js-open-modal {
+//   padding: 20px;
+//   display: inline-block;
+//   text-decoration: none;
+//   background-color: #414b52;
+//   margin: 10px;
+//   color: #fff;
+//   border-radius: 3px;
+// }
 
 @media screen and (min-width: 768px) {
   .modal {
