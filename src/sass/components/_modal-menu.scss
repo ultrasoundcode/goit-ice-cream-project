@@ -29,6 +29,9 @@
   padding: 0;
   border: none;
   line-height: 0;
+  @media screen and (min-width: 768px) {
+    right: 32px;
+  }
 }
 .mob-menu__close-icon {
   fill: var(--white-color);
@@ -50,9 +53,19 @@
   align-items: center;
   text-align: center;
   color: #fcfcfc;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
+}
+.mobile-menu__buy-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mob-menu__buy-btn {
   background-color: transparent;
