@@ -104,4 +104,7 @@
     background: var(--button-disabled-color);
     color: var(--black-color);
   }
+  &:hover .page-header__btn-icon {
+    fill: var(--white-color);
+  }
 }
