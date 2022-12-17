@@ -284,6 +284,7 @@ body {
     display: flex;
     width: 100%;
     background-image: url(/src/images/hero/bg-hero-320@1x.png);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
   }
@@ -293,6 +294,7 @@ body {
     display: flex;
     width: 100%;
     background-image: url(/src/images/hero/bg-hero-768@1x.png);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
   }
@@ -302,13 +304,19 @@ body {
     display: flex;
     width: 100%;
     background-image: url(/src/images/hero/bg-hero-1200@1x.png);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
   }
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero-container {
     background-image: url(/src/images/hero/bg-hero-1200@2x.png);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-container {
+    background-image: url(/src/images/hero/bg-hero-768@2x.png);
   }
 }
 @media screen and (min-width: 768px) {
@@ -400,6 +408,7 @@ body {
     font-size: 14px;
     line-height: 1.2857142857;
     color: #131313;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .hero_logo-button:hover, .hero_logo-button:focus {
     border: solid 2px transparent;
@@ -538,19 +547,16 @@ body {
 
 @media screen and (min-width: 320px) {
   .products__container {
-    background-image: url(../images/body/bg-icecreem-480@1x.jpg);
     max-width: 767px;
   }
 }
 @media screen and (min-width: 768px) {
   .products__container {
-    background-image: url(../images/body/bg-icecreem-768@1x.jpg);
     min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .products__container {
-    background-image: url(../images/body/bg-icecreem-1200@1x.jpg);
     min-width: 1200px;
   }
 }
@@ -848,7 +854,7 @@ body {
   line-height: 1.2222222222;
   text-align: center;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: var(--primary-text-color);
   margin-bottom: 12px;
 }
 @media screen and (min-device-width: 768px) {
@@ -877,7 +883,7 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: var(--primary-text-color);
   margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
@@ -1012,11 +1018,12 @@ body {
   line-height: 1.75;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #fcfcfc;
+  color: var(--primary-text-color);
 }
 @media screen and (min-device-width: 768px) {
   .about__text-one {
     text-align: left;
+    font-size: 14px;
   }
 }
 @media screen and (min-device-width: 1200px) {
@@ -1033,7 +1040,7 @@ body {
   line-height: 162%;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #fcfcfc;
+  color: var(--primary-text-color);
 }
 @media screen and (min-device-width: 768px) {
   .about__text-two {
@@ -1058,7 +1065,7 @@ body {
   line-height: 194%;
   /* or 23px */
   letter-spacing: 0.04em;
-  color: #fcfcfc;
+  color: var(--primary-text-color);
 }
 @media screen and (min-device-width: 768px) {
   .about__text-three {
@@ -1086,24 +1093,24 @@ body {
   font-size: 14px;
   line-height: 1.2857142857;
   text-align: center;
-  color: #000000;
+  color: var(--black-color);
   margin: 10px auto 50px auto;
-  background: #f8d24e;
+  background: var(--accent-color);
   border-radius: 10px;
   border-color: transparent;
 }
 .about__btn:hover {
-  background: #0a8817;
+  background: var(--button-hover-color);
 }
 .about__btn:focus {
-  background: #0a8817;
-  color: #fcfcfc;
+  background: var(--button-hover-color);
+  color: var(--primary-text-color);
 }
 .about__btn:focus:focus .about__icon-btn {
-  fill: #fcfcfc;
+  fill: var(--primary-text-color);
 }
 .about__btn:focus:disabled {
-  background: #ababab;
+  background: var(--button-disabled-color);
 }
 @media screen and (min-device-width: 768px) {
   .about__btn {
@@ -1140,7 +1147,7 @@ body {
 .about__icon-box {
   width: 50px;
   height: 50px;
-  background-color: #f8d24e;
+  background-color: var(--accent-color);
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -1172,7 +1179,7 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: var(--primary-text-color);
   margin-bottom: 16px;
 }
 @media screen and (min-device-width: 768px) {
@@ -1197,7 +1204,7 @@ body {
   line-height: 170%;
   /* or 20px */
   text-align: center;
-  color: #fcfcfc;
+  color: var(--primary-text-color);
 }
 @media screen and (min-device-width: 768px) {
   .about__description {
@@ -1278,6 +1285,20 @@ body {
   font-family: "Montserrat";
 }
 
+.review {
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .review {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .review {
+    padding-bottom: 100px;
+  }
+}
+
 .review__slide {
   display: flex;
   flex-direction: column;
@@ -1338,22 +1359,31 @@ body {
 
 .review__pagination {
   position: unset;
-  margin-bottom: 40px;
 }
 
 .contacts {
-  background: var(--background-color);
-  padding-top: 60px;
+  position: relative;
   padding-bottom: 60px;
 }
 
+.contacts__overlay {
+  position: absolute;
+  background-color: var(--background-color);
+  height: calc(100% - 352px);
+  width: 100%;
+  top: 353px;
+  z-index: 1;
+}
+
 .contacts__list {
+  position: relative;
   list-style: none;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 16px;
+  z-index: 999;
 }
 
 .contacts-card {
@@ -1370,6 +1400,7 @@ body {
   width: 80px;
   height: 22px;
   padding: 4px 22px 4px;
+  border-radius: 6px;
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 12px;
@@ -1489,6 +1520,11 @@ body {
   color: var(--secondary-text-color);
 }
 
+.button-container {
+  position: relative;
+  z-index: 777;
+}
+
 .contacts__button {
   display: block;
   margin: 20px auto 16px;
@@ -1545,8 +1581,11 @@ body {
 
 @media screen and (min-width: 768px) {
   .contacts {
-    padding-top: 80px;
     padding-bottom: 40px;
+  }
+  .contacts__overlay {
+    top: 286px;
+    height: calc(100% - 285px);
   }
   .contacts__list {
     display: flex;
@@ -1621,6 +1660,8 @@ body {
     line-height: 1.5;
   }
   .button-container {
+    position: relative;
+    z-index: 777;
     max-width: 408px;
     max-height: 42px;
     display: flex;
@@ -1637,8 +1678,11 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    padding-top: 100px;
     padding-bottom: 120px;
+  }
+  .contacts__overlay {
+    top: 115px;
+    height: calc(100% - 114px);
   }
   .contacts__list {
     gap: 32px;
@@ -1989,6 +2033,10 @@ body {
   color: var(--black-color);
 }
 
+.modal--franchise {
+  height: 674px;
+}
+
 .modal__text-franchise {
   margin-top: 20px;
   margin-bottom: 24px;
@@ -2265,10 +2313,9 @@ body {
 
 .modal__title {
   font-family: "Seymour One";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   color: var(--secondary-text-color);
 }
 
@@ -2298,15 +2345,15 @@ body {
 
 /* Стили для кнопки закрытия */
 .modal__cross {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: 20px;
   right: 20px;
   fill: var(--secondary-text-color);
   cursor: pointer;
 }
-.modal__cross:hover, .modal__crossfocus {
+.modal__cross:hover, .modal__cross:focus {
   fill: var(--background-color);
 }
 
@@ -2330,9 +2377,13 @@ a.js-open-modal {
     background-color: var(--primary-text-color);
     transition: 0.3s all;
   }
+  .modal__cross {
+    width: 24px;
+    height: 24px;
+  }
   .modal__title {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
   }
   .modal__text {
     font-size: 16px;
