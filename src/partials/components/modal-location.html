@@ -5,8 +5,11 @@
 <div class="modal" data-modal="2">
 
    <!--   Svg иконка для закрытия окна  -->
-   <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-   <h2 class="modal__title">Our Locations</h2>
+   <button type="button" class="mob-menu__close-btn" data-menu-close>
+    <svg class="mob-menu__close-icon--black js-modal-close" height="20" width="20">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button><h2 class="modal__title">Our Locations</h2>
    <iframe class="modal__map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20309.075323923767!2d30.4721233!3d50.4851493!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1671051414751!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    <a href="https://goo.gl/maps/pE2FMXiaz7X2HRFF9" class="button">Open map</a>
 </div>
