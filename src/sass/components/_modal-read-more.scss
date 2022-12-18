@@ -41,7 +41,6 @@
   border-radius: 10px;
   background-color: var(--primary-text-color);
   transition: 0.3s all;
-  height: 90vh;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -128,6 +127,10 @@
     border-radius: 10px;
     background-color: var(--primary-text-color);
     transition: 0.3s all;
+  }
+
+  .modal--read-more {
+    height: 449px;
   }
 
   .modal__cross {

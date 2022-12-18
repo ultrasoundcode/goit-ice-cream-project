@@ -47,6 +47,10 @@ border-radius: 10px;
     transition: 0.3s all;
  }
 
+ .modal--our-location {
+    height: 365px;
+  }
+
  .modal__title {
     font-family: 'Seymour One';
 font-style: normal;
@@ -128,6 +132,10 @@ border-radius: 10px;
     background-color: var(--primary-text-color);
     transition: 0.3s all;
  }
+
+ .modal--our-location {
+    height: 458px;
+  }
 
  .modal__title {
 font-size: 20px;
