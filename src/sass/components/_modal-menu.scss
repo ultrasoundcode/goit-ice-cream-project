@@ -44,6 +44,16 @@
   fill: var(--white-color);
 }
 
+.mob-menu__close-icon--black {
+  color: var(--secondary-text-color);
+  margin-top: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .mob-menu__list {
   margin-top: 48px;
   margin-bottom: 110px;
