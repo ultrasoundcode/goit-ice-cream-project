@@ -90,10 +90,14 @@
 
   &:hover {
     background: var(--button-hover-color);
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+      both;
   }
   &:focus {
     background: var(--button-hover-color);
     color: var(--primary-text-color);
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+      both;
   }
   &:disabled {
     background: var(--button-disabled-color);
