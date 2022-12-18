@@ -227,10 +227,12 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    animation: pulse 1000ms linear 10 alternate;
   }
 
   .hero__title {
     margin-top: 12px;
+    animation: text 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   }
 }
 
