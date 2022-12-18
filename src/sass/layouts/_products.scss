@@ -252,20 +252,20 @@
     line-height: 1.76;
     margin: 0 auto;
     margin-bottom: 50px;
+    
 }  
 
 @media screen and (min-width: 320px) {
     .products__description {
     max-width: 200px;
     min-height: 148px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 }
 @media screen and (min-width: 768px) {
     .products__description {
         max-width: 172px;
         min-height: 175px;
-        margin-top: 18x;
 }
 } 
 @media screen and (min-width: 1200px) {
@@ -273,7 +273,7 @@
         max-width: 242px;
         min-height: 142px;
         font-size: 16px;
-        margin-top: 36px;
+        margin-top: 66px;
 }
 }   
 
