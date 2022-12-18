@@ -1,3 +1,19 @@
+.products {
+    background-size: 100%;
+}
+@media screen and (min-width: 768px) {
+    .products {
+        background-image: url(../images/body/bg-icecreem-768@2x.jpg);
+        background-position: -91px -114px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .products {
+        background-image: url(../images/body/bg-icecreem-1200@2x.jpg);
+        background-position: -61px -251px;
+    }
+}
+
 .products__container {
     margin: 0 auto;
     padding-bottom: 60px;
