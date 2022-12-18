@@ -11,6 +11,19 @@
 
   z-index: 1;
 }
+
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
 .contacts__list {
   position: relative;
   list-style: none;
@@ -37,11 +50,11 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   &:hover,
   &:focus {
-    box-shadow: 0px 8px 35px rgba(212, 20, 67, 0.4)
-}
+    box-shadow: 0px 8px 35px rgba(212, 20, 67, 0.4);
+  }
 }
 
 .contacts-card__category {
@@ -104,9 +117,9 @@
 
 // .contacts-card__address-link:focus {
 //   text-decoration: underline;
-  
+
 //   text-decoration-style: solid;
-  
+
 // }
 
 .contacts-card__address-second {
@@ -144,7 +157,7 @@
   color: var(--products-color-third);
 
   &:hover,
-  &:focus { 
+  &:focus {
     cursor: context-menu;
     text-decoration-line: underline;
     text-decoration-color: var(--products-color-third);
