@@ -26,8 +26,13 @@
 .review__text {
   margin-bottom: 32px;
   padding: 35px 40px;
+  min-height: 255px;
+
+  display: flex;
+  align-items: center;
 
   background-color: var(--background-color);
+  color: var(--primary-text-color);
 
   font-style: normal;
   font-weight: 400;
@@ -35,13 +40,12 @@
   line-height: 255%;
   text-align: center;
 
-  color: var(--primary-text-color);
-
   border-radius: 10px;
 
   @media screen and (min-width: 768px) {
     max-width: 705px;
     padding: 28px 80px;
+    min-height: 139px;
 
     font-weight: 500;
     font-size: 14px;
@@ -74,4 +78,11 @@
 
 .review__pagination {
   position: unset;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--background-color);
 }
