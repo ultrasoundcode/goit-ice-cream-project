@@ -1,20 +1,27 @@
 .mob-menu {
   position: fixed;
-  top: 0px;
-  left: 0;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
   width: 100%;
   height: 100%;
+  padding-top: 16px;
   background-color: var(--background-color);
-  opacity: 0;
+  z-index: 15;
+  opacity: 0.3;
   visibility: hidden;
   pointer-events: none;
-  z-index: 15;
+  transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 400ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  z-index: 15;
+  transform: translateX(0);
 }
 .mob-menu__container {
   position: relative;
@@ -23,15 +30,15 @@
 }
 .mob-menu__logo {
   display: block;
-  padding-top: 12px;
-  @media screen and (min-width: 768px) {
-    padding-top: 20px;
-  }
+  // padding-top: 12px;
+  // @media screen and (min-width: 768px) {
+  // padding-top: 20px;
+  // }
 }
 
 .mob-menu__close-btn {
   position: absolute;
-  top: 16px;
+  top: 0px;
   right: 20px;
   background-color: transparent;
   padding: 0;
