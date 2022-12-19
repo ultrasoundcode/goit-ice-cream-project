@@ -15,32 +15,24 @@
   &:hover {
     border: 2px solid var(--button-hover-color);
   }
-}
 
-.button-products--desktop {
-  border-radius: 10px;
-  border: 2px solid var(--accent-color);
-  min-width: 134px;
-  height: 42px;
+  @media screen and (min-width: 1200px) {
+    border-radius: 10px;
+    min-width: 134px;
+    height: 42px;
 
-  font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-  background-color: transparent;
+    font-size: 14px;
+    line-height: calc(18 / 14);
 
-  &:hover {
-    border: 2px solid var(--button-hover-color);
-  }
+    &:focus {
+      border: 2px solid var(--button-hover-color);
+      color: var(--primary-text-color);
+    }
 
-  &:focus {
-    border: 2px solid var(--button-hover-color);
-    color: var(--primary-text-color);
-  }
-
-  &:disabled {
-    border: 2px solid var(--button-disabled-color);
-    color: var(--black-color);
+    &:disabled {
+      border: 2px solid var(--button-disabled-color);
+      color: var(--black-color);
+    }
   }
 }
 
@@ -98,7 +90,6 @@
     color: var(--black-color);
   }
 }
-
 
 .button-buy-now {
   min-width: 152px;
