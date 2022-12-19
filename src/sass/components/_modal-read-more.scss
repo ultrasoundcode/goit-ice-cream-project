@@ -18,7 +18,7 @@
 /* Стили для модальных окон */
 
 .modal {
-  max-height: 90%;
+  max-height: calc(100vh - 50px);
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
