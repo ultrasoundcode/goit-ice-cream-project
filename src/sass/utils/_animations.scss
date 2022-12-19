@@ -1,3 +1,25 @@
+@keyframes pulse {
+  0% {
+    transform: scale(100%);
+  }
+
+  100% {
+    transform: scale(110%);
+  }
+}
+
+@keyframes text {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
 @keyframes shake-horizontal {
   0%,
   100% {
@@ -23,5 +45,15 @@
 
   90% {
     transform: translateX(-8px);
+  }
+}
+
+@keyframes pulse-2 {
+  0% {
+    transform: scale(100%);
+  }
+
+  100% {
+    transform: scale(105%);
   }
 }

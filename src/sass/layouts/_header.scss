@@ -21,6 +21,9 @@
   width: 40px;
   height: 37px;
   fill: var(--accent-color);
+  &:hover {
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
 }
 @media screen and (min-width: 768px) {
   .page-header__logo {

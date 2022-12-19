@@ -190,7 +190,7 @@
   font-size: 12px;
   line-height: 162%;
   text-align: center;
-  
+
   color: var(--primary-text-color);
   @media screen and (min-device-width: 768px) {
     line-height: 176%;
@@ -246,6 +246,7 @@
 
   &:hover {
     background: var(--button-hover-color);
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   }
   &:focus {
     background: var(--button-hover-color);
@@ -268,7 +269,7 @@
     margin-top: 54px;
   }
 }
-.about__icon-btn{
+.about__icon-btn {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .about__list {
@@ -287,14 +288,14 @@
   }
 }
 
-.about__item{
+.about__item {
   max-width: 230px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-device-width: 768px){
+  @media screen and (min-device-width: 768px) {
     max-width: 152px;
   }
-  @media screen and (min-device-width: 1200px){
+  @media screen and (min-device-width: 1200px) {
     max-width: 368px;
   }
 }
@@ -318,6 +319,9 @@
 .about__icon {
   width: 36px;
   height: 36px;
+  &:hover {
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
 }
 .about__properties {
   font-family: 'Montserrat';
