@@ -13,7 +13,7 @@
   height: 90vh;
   overflow-y: auto;
 
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 768px) {
     width: 568px;
   }
 
@@ -29,7 +29,8 @@
     color: #131313;
     margin-top: 28px;
     margin-bottom: 20px;
-    @media screen and (min-width: 568px) {
+
+    @media screen and (min-width: 768px) {
       margin-top: 32px;
       margin-bottom: 40px;
     }
@@ -42,13 +43,14 @@
   justify-content: center;
   gap: 40px;
 
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 768px) {
     width: 568px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-end;
     gap: 32px;
+    margin-top: 40px;
   }
 }
 .ice-cream-menu {
@@ -61,7 +63,7 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 40px;
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,7 +75,7 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 40px;
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,7 +159,7 @@
 .name-product-icecoffee {
   width: 132px;
   height: 136px;
-  border: 2px solid #96af8c;
+  border: 2px solid #efd478;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15px;
   display: flex;
@@ -175,7 +177,7 @@
 .name-product-milkshake {
   width: 132px;
   height: 136px;
-  border: 2px solid #96af8c;
+  border: 2px solid #d6936d;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15px;
   display: flex;
@@ -206,14 +208,13 @@
 }
 
 .modal__batton {
-  width: 114px;
-  height: 42px;
   border-radius: 4px;
   font-weight: 700;
   letter-spacing: 0.06em;
   cursor: pointer;
   border: none;
-  display: block;
+  padding: 12px 34px;
+  display: flex;
   margin: 0 auto;
   color: var(--best-color2);
   background: #f8d24e;
@@ -225,7 +226,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
+  align-items: center;
   justify-content: center;
 }
 
@@ -244,7 +245,7 @@
   fill: #131313;
   margin-bottom: 40px;
 
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 768px) {
     top: 17px;
     right: 17px;
     width: 13px;
@@ -338,4 +339,8 @@
   text-align: center;
   color: #131313;
   margin-top: 8px;
+}
+
+.contact-form-products {
+  margin-top: 106px;
 }

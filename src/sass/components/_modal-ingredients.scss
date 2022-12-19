@@ -73,7 +73,7 @@
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 768px) {
     width: 368px;
     height: 42px;
   }
@@ -91,9 +91,10 @@
   border-radius: 10px;
   margin-bottom: 26px;
 
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 768px) {
     width: 368px;
     height: 84px;
+    margin-bottom: 32px;
   }
 }
 .modal__batton {
