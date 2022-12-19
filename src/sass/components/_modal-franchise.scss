@@ -9,7 +9,6 @@
 
 .contacts-form {
   width: 224px;
-  height: 332px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -53,14 +52,18 @@
 }
 
 .button-buy-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 24px;
   margin-bottom: 28px;
-  display: inline-block;
   min-width: 114px;
-  height: 42px;
+  min-height: 42px;
   background: var(--accent-color);
   border-radius: 10px;
   border: none;
+  margin-left: auto;
+    margin-right: auto;
 
   font-family: 'Montserrat';
   font-weight: 600;
