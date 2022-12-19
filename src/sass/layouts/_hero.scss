@@ -28,8 +28,7 @@
       color: var(--primary-text-color);
     }
     &:disabled {
-      background: var(--button-disabled-color);
-      color: var(--black-color);
+      color: var(--button-disabled-color);
     }
   }
 }
