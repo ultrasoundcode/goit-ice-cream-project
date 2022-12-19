@@ -6,8 +6,8 @@
           <h1 class="hero__title">ice cream made with passion</h1>
         </li>
         <li class="hero__logo-list_item hero-buttons">
-          <button type="button" class="hero_logo-button js-open-modal" data-modal="5">Products</button>
-          <button type="button" class="hero_logo-button">How it’s made?</button>
+          <a href="#products" class="hero_logo-button">Products</a>
+          <a href="#howitsmade" class="hero_logo-button_him">How it’s made?</a>
         </li>
       </ul>
       <ul class="hero__content-list">
@@ -52,71 +52,75 @@
           </picture>
         </li>
         <li class="hero__content-list_item">
-          <p class="hero__content-list_text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
-          <svg class="hero__content-list_text-icon" width="40" height="16">
-            <use href="./images/icons.svg#icon-arrow"></use>
-          </svg>
+          <div class="hero__content-list_item-wrapper">
+            <p class="hero__content-list_text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <svg class="hero__content-list_text-icon" width="40" height="16">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </div>
         </li>
       </ul>
     </div>
     <div class="hero-right-block">
-      <picture>
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            ./images/hero/img-hero-1200@1x.webp 1x,
-            ./images/hero/img-hero-1200@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            ./images/hero/img-hero-1200@1x.png 1x,
-            ./images/hero/img-hero-1200@2x.png 2x
-          "
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/hero/img-hero-768@1x.webp 1x,
-            ./images/hero/img-hero-768@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/hero/img-hero-768@1x.png 1x,
-            ./images/hero/img-hero-768@2x.png 2x
-          "
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/hero/img-hero-320@1x.webp 1x,
-            ./images/hero/img-hero-320@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/hero/img-hero-320@1x.png 1x,
-            ./images/hero/img-hero-320@2x.png 2x
-          "
-        />
+      <div class="hero__ice-cream-cone">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/img-hero-1200@1x.webp 1x,
+              ./images/hero/img-hero-1200@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/img-hero-1200@1x.png 1x,
+              ./images/hero/img-hero-1200@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero/img-hero-768@1x.webp 1x,
+              ./images/hero/img-hero-768@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero/img-hero-768@1x.png 1x,
+              ./images/hero/img-hero-768@2x.png 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/hero/img-hero-320@1x.webp 1x,
+              ./images/hero/img-hero-320@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/hero/img-hero-320@1x.png 1x,
+              ./images/hero/img-hero-320@2x.png 2x
+            "
+          />
 
-        <img
-          src="./images/hero/img-hero-320@1x.png"
-          alt="ice cream cone"
-          class="hero__ice-cream-cone-image"
-          loading="lazy"
-        />
-      </picture>
+          <img
+            src="./images/hero/img-hero-320@1x.png"
+            alt="ice cream cone"
+            class="hero__ice-cream-cone-image"
+            loading="lazy"
+          />
+        </picture>
+      </div>
 
       <div class="hero-right-block__list-item">
         <ul class="venue__list">
