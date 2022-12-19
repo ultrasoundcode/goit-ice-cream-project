@@ -1,0 +1,341 @@
+.window-product {
+  position: absolute;
+  width: 280px;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90vh;
+  overflow-y: auto;
+
+  @media screen and (min-width: 568px) {
+    width: 568px;
+  }
+
+  .widow-product__header {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #131313;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 568px) {
+      margin-top: 32px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.name-product__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+
+  @media screen and (min-width: 568px) {
+    width: 568px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    gap: 32px;
+  }
+}
+.ice-cream-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ice-coffee-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  @media screen and (min-width: 568px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+  }
+}
+.milkshake-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  @media screen and (min-width: 568px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+  }
+}
+
+.modal-product-overlapping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal-product__ice {
+  z-index: 999;
+  position: absolute;
+  width: 132px;
+}
+
+.modal-product__bg {
+  width: 132px;
+  height: 132px;
+  background: rgba(156, 190, 143, 0.7);
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  z-index: 998;
+  margin-top: 7px;
+}
+
+.modal-product__milkshake {
+  width: 132px;
+  height: 132px;
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  z-index: 998;
+  margin-top: 7px;
+  &:hover {
+    background: #aec6a5;
+  }
+}
+
+.modal-product__coffe {
+  width: 132px;
+  height: 132px;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
+  z-index: 998;
+  margin-top: 7px;
+}
+
+.name-product {
+  width: 132px;
+  height: 136px;
+  border: 2px solid #96af8c;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  z-index: 997;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  margin-top: 135px;
+  cursor: pointer;
+  &:hover {
+    background: #aec6a5;
+  }
+}
+.name-product-icecoffee {
+  width: 132px;
+  height: 136px;
+  border: 2px solid #96af8c;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  z-index: 997;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  margin-top: 135px;
+  cursor: pointer;
+  &:hover {
+    background: #efd478;
+  }
+}
+.name-product-milkshake {
+  width: 132px;
+  height: 136px;
+  border: 2px solid #96af8c;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  z-index: 997;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  margin-top: 135px;
+  cursor: pointer;
+  &:hover {
+    background: #d6936d;
+  }
+}
+
+.name-product__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+
+  margin-bottom: 20px;
+}
+
+.modal__batton {
+  width: 114px;
+  height: 42px;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  color: var(--best-color2);
+  background: #f8d24e;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  margin-bottom: 29px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  justify-content: center;
+}
+
+.modal-btn__close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 11px;
+  height: 11px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  fill: #131313;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 568px) {
+    top: 17px;
+    right: 17px;
+    width: 13px;
+    height: 13px;
+    margin-top: 48px;
+  }
+}
+.ingredients {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+
+.ingredients-name__list {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
+  justify-content: space-between;
+}
+.image-overlapping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-overlapping__ice {
+  z-index: 999;
+  position: absolute;
+  top: 66px;
+  margin-top: 24px;
+}
+.image-overlapping__bg {
+  width: 132px;
+  height: 132px;
+  background: rgba(156, 190, 143, 0.7);
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  margin-top: 37px;
+}
+
+.additives-list {
+  display: flex;
+  align-items: center;
+}
+.additives__item {
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  width: 53px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.additives__item__number {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #131313;
+  width: 43px;
+  height: 43px;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+}
+.additives__item__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+  margin-top: 8px;
+}
